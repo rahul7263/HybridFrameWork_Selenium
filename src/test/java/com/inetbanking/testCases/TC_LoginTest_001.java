@@ -10,7 +10,7 @@ public class TC_LoginTest_001 extends BaseClass {
 	@Test
 	public void loginTest() {
 	 
-          driver.get(BaseURL);
+         
           driver.manage().window().maximize();
         
          
