@@ -5,8 +5,8 @@
     <classes>
       <class name="com.inetbanking.testCases.TC_LoginTest_001">
         <methods>
-          <include name="setup"/>
           <include name="loginTest"/>
+          <include name="setup"/>
           <include name="tearDown"/>
         </methods>
       </class> <!-- com.inetbanking.testCases.TC_LoginTest_001 -->

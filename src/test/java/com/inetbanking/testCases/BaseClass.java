@@ -1,30 +1,34 @@
 package com.inetbanking.testCases;
 
-import org.apache.log4j.Logger;
-import org.apache.log4j.PropertyConfigurator;
+
+
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.core.Logger;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 
+import com.inetbanking.utilites.ReadConfig;
+
+
 public class BaseClass {
    
+	ReadConfig readconfig = new ReadConfig();
 	
-	public String BaseURL ="https://demo.guru99.com/v3/index.php";
-	public String username ="mngr519614";
-	public String password = "ajYmegu";
+	public String BaseURL = readconfig.getApllicationURL();
+	public String username = readconfig.getUsername();
+	public String password = readconfig.getPassword();
 	public static WebDriver driver;
-	
-	public static Logger logger;
 	
 	@BeforeClass
 	public void setup() {
-		
-		System.setProperty("webdriver.chrome.driver",System.getProperty("user.dir")+"//Drivers//chromedriver.exe");
+		          
+		//System.getProperty("user.dir")+"//Drivers//chromedriver.exe"
+		System.setProperty("webdriver.chrome.driver",readconfig.getChromePath());
 		driver = new ChromeDriver();
 		
-		Logger logger = Logger.getLogger("ebanking");
-		PropertyConfigurator.configure("Log4j.properties");
+		
 	}
 	
 	@AfterClass
