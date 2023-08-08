@@ -2,12 +2,12 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-08-05T23:57:31 IST" name="InetBankingV1" finished-at="2023-08-05T23:57:39 IST" duration-ms="7673">
+  <suite started-at="2023-08-08T14:17:52 IST" name="InetBankingV1" finished-at="2023-08-08T14:18:00 IST" duration-ms="8384">
     <groups>
     </groups>
-    <test started-at="2023-08-05T23:57:31 IST" name="BankingApp Test" finished-at="2023-08-05T23:57:39 IST" duration-ms="7673">
+    <test started-at="2023-08-08T14:17:52 IST" name="BankingApp Test" finished-at="2023-08-08T14:18:00 IST" duration-ms="8384">
       <class name="com.inetbanking.testCases.TC_LoginTest_001">
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.inetbanking.testCases.TC_LoginTest_001@525575]" started-at="2023-08-05T23:57:31 IST" name="setup" finished-at="2023-08-05T23:57:37 IST" duration-ms="5494" status="PASS">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.inetbanking.testCases.TC_LoginTest_001@71c27ee8]" started-at="2023-08-08T14:17:52 IST" name="setup" finished-at="2023-08-08T14:17:58 IST" duration-ms="6006" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -18,11 +18,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="loginTest()[pri:0, instance:com.inetbanking.testCases.TC_LoginTest_001@525575]" started-at="2023-08-05T23:57:37 IST" name="loginTest" finished-at="2023-08-05T23:57:39 IST" duration-ms="1917" status="PASS">
+        <test-method signature="loginTest()[pri:0, instance:com.inetbanking.testCases.TC_LoginTest_001@71c27ee8]" started-at="2023-08-08T14:17:58 IST" name="loginTest" finished-at="2023-08-08T14:17:59 IST" duration-ms="1902" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.inetbanking.testCases.TC_LoginTest_001@525575]" started-at="2023-08-05T23:57:39 IST" name="tearDown" finished-at="2023-08-05T23:57:39 IST" duration-ms="230" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.inetbanking.testCases.TC_LoginTest_001@71c27ee8]" started-at="2023-08-08T14:17:59 IST" name="tearDown" finished-at="2023-08-08T14:18:00 IST" duration-ms="441" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

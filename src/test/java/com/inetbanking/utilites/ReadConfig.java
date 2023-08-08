@@ -4,6 +4,9 @@ import java.io.File;
 import java.io.FileInputStream;
 import java.util.Properties;
 
+import com.aventstack.extentreports.ExtentReports;
+import com.aventstack.extentreports.reporter.ExtentSparkReporter;
+
 public class ReadConfig {
   
 	Properties pro;
@@ -22,6 +25,8 @@ public class ReadConfig {
 		  
 		  System.out.println("Exception is "+e.getMessage());
 	  }
+	  
+	
 	  
 	}
 	
@@ -54,4 +59,8 @@ public class ReadConfig {
 		String firefoxpath = pro.getProperty("firefoxpath");
 		return firefoxpath;
 	}
+   
+   
+   
+   
 }

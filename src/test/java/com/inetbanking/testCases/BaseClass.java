@@ -9,8 +9,12 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
+import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Parameters;
 
+import com.aventstack.extentreports.ExtentReports;
+import com.aventstack.extentreports.ExtentTest;
+import com.aventstack.extentreports.reporter.ExtentSparkReporter;
 import com.inetbanking.utilites.ReadConfig;
 
 
@@ -22,6 +26,8 @@ public class BaseClass {
 	public String username = readconfig.getUsername();
 	public String password = readconfig.getPassword();
 	public static WebDriver driver;
+	
+	
 	
 	@Parameters("browser")
 	@BeforeClass
@@ -37,7 +43,11 @@ public class BaseClass {
 			driver = new FirefoxDriver();
 		}
 		 driver.get(BaseURL);
+		 
+		 
 	}
+	
+	
 	
 	@AfterClass
 	public void tearDown() {
