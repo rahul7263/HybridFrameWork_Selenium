@@ -7,6 +7,7 @@ import java.io.IOException;
 import java.time.Duration;
 
 import org.apache.commons.io.FileUtils;
+import org.apache.commons.lang3.RandomStringUtils;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.core.Logger;
 import org.openqa.selenium.OutputType;
@@ -69,4 +70,10 @@ public class BaseClass {
 		FileUtils.copyFile(source, target);
 		System.out.println("Screenshot taken");
 	}
+	 
+	 public  String randomestring()
+		{
+		      String generatedstring =RandomStringUtils.randomAlphabetic(8);
+		      return(generatedstring);
+		}
 }
